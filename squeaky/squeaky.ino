@@ -66,13 +66,3 @@ void exercise() {
   for (int pump = 0; pump < 6; pump++) run(pump, OFF);
 }
 
-void setup() {
-  for (int pin = 0; pin < 16; pin++) {
-    pinMode(pin, OUTPUT);
-    digitalWrite(pin, LOW);
-  }
-}
-
-void loop() {
-  exercise();
-}
