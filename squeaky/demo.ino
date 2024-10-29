@@ -3,5 +3,6 @@ void setup() {
 }
 
 void loop() {
-  exercise();
+  for(int pump=0; pump<4; pump++) run(pump, CW);
+  delay(1000);
 }
