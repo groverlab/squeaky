@@ -2,6 +2,13 @@
 #define CW 1
 #define CCW 2
 
+void setup_pins() {
+  for (int pin = 0; pin < 16; pin++) {
+    pinMode(pin, OUTPUT);
+    digitalWrite(pin, LOW);
+  }
+}
+
 void run(int pump_number, int direction) {
   int pin1 = 0;
   int pin2 = 0;
@@ -65,4 +72,3 @@ void exercise() {
   delay(3000);
   for (int pump = 0; pump < 6; pump++) run(pump, OFF);
 }
-
