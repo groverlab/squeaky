@@ -1,8 +1,7 @@
 void setup() {
   setup_pins();
+  run(0, CW);
 }
 
 void loop() {
-  for(int pump=0; pump<4; pump++) run(pump, CW);
-  delay(1000);
 }
